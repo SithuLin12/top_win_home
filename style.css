@@ -71,4 +71,8 @@
     .image{
         width: 80px;
     }
+
+    .content {
+      background-color:transparent;
+      }
   }
