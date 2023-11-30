@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.min.css"
+    rel="stylesheet"
+    />
+    </head>
+
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 500px;
+  padding: 20px;
+}
+
+.content-two {
+  position: absolute;
+  top: 20%;
+  /* background: rgba(0, 0, 0, 0.5); */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.bb{
+    border: rgb(83, 43, 226) solid;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+    </style>
+<body >
+    <video autoplay muted loop id="myVideo">
+        <source src="./Casino Games _ Poker Champions _ Casino Online Intro ( After Effects Template ) ★ AE Templates.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+
+
+     <div class="d-flex justify-content-center">
+        <div class="content d-flex  align-items-center fw-bolder  rounded-pill">
+            <img src="./logo.png" width="150px" alt="">
+            <h1>TOP <span class="text-warning">WIN</span></h1>
+          </div>
+     </div>
+    <div class="d-flex justify-content-center">
+        <div class="content-two d-flex justify-content-center align-items-center fw-bolder  rounded-pill">
+            <div class="d-flex">
+                <a href="" class="bb btn bg-black bg-opacity-75 me-4 d-flex align-items-center py-3 rounded-5">
+                    <img src="./game_cion.png" height="40px" alt="">
+                    <div>
+                        <h3>TỪ THIỆN</h3>
+                    <span>CHARITY FUND</span>
+                    </div>
+                </a>
+
+
+                <a href="" class="bb btn bg-black bg-opacity-75 me-4 d-flex align-items-center py-3 rounded-5">
+                    <img src="./download_icon.png" height="40px" alt="">
+                    <div>
+                        <h3>TỪ THIỆN</h3>
+                    <span>CHARITY FUND</span>
+                    </div>
+                </a>
+
+
+                <a href="" class="bb btn bg-black bg-opacity-75 me-4 d-flex align-items-center py-3 rounded-5">
+                    <img src="./home_icon.png" height="40px" alt="">
+                    <div>
+                        <h3 class="text-white">TỪ THIỆN</h3>
+                    <span class="text-white">CHARITY FUND</span>
+                    </div>
+                </a>
+
+                <a href="" class="bb btn bg-black bg-opacity-75 me-4 d-flex align-items-center py-3 rounded-5">
+                    <img src="./support_icon.png" height="40px" alt="">
+                    <div>
+                        <h3>TỪ THIỆN</h3>
+                    <span>CHARITY FUND</span>
+                    </div>
+                </a>
+
+                <a href="" class="bb btn bg-black bg-opacity-75 me-4 d-flex align-items-center py-3 rounded-5">
+                    <img src="./facebook_icon.png" height="40px" alt="">
+                    <div>
+                        <h3>TỪ THIỆN</h3>
+                    <span>CHARITY FUND</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.umd.min.js"
+></script>
+
+<script>
+    var video = document.getElementById("myVideo");
+    var btn = document.getElementById("myBtn");
+    
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+    </script>
+</html>
