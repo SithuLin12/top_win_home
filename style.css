@@ -33,6 +33,10 @@
     width: 100%;
     padding: 20px;
   }
+
+  .image{
+    width: 150px;
+  }
   
   .content-three{
     position: absolute;
@@ -63,8 +67,8 @@
   }
 
 
-  /* @media only screen and (max-width: 600px) {
-    .content-two{
-        display: none;
+  @media only screen and (max-width: 600px) {
+    .image{
+        width: 80px;
     }
-  } */
+  }
